@@ -1,4 +1,4 @@
-# Hacman dokuwiki docker
+# Hacman docker-dokuwiki
 
 This is an experimental docker setup for the use of dokuwiki.
 
