@@ -2,14 +2,14 @@
 
 ## Download the compose file
 
-Create a directory for the compose file
 ```sh
+# Create a directory for the compose file
 mkdir -p /root/docker/compose-files
 cd /root/docker/compose-files
+
+# Next download a copy of `docker-compose.yml` into that directory
+wget https://raw.githubusercontent.com/HACManchester/docker-dokuwiki/master/docker-compose.yml
 ```
-
-Next download a copy of `docker-compose.yml` into that directory
-
 
 ## Configuration
 
