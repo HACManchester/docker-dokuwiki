@@ -1,0 +1,17 @@
+---
+version: "2.4"
+services:
+  dokuwiki:
+    # image: lscr.io/linuxserver/dokuwiki:version-2023-04-04a
+    build: https://github.com/HACManchester/docker-dokuwiki
+    container_name: dokuwiki-hacman
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+    volumes:
+      - /root/docker/appdata/dokuwiki/config:/config
+    ports:
+      - 8000:80
+      - 4443:443 #optional
+    restart: unless-stopped
