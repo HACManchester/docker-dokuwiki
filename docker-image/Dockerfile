@@ -10,7 +10,7 @@ COPY config/test1.txt /config/test1.txt
 
 RUN \
   echo 'TODO TEST TODO' && \
-  ls -l \
+  ls -l
 
 # ports and volumes
 EXPOSE 80 443
