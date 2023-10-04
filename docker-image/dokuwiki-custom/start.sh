@@ -4,6 +4,7 @@
 if [ ! -f /config/dokuwiki/.firstrun ]
 then
     echo "Hacman-dokuwiki: Setting up /config"
+    mkdir -p /config/dokuwiki
     echo "" >> /config/dokuwiki/.firstrun
 
     # TODO
