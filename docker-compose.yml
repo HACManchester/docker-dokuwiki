@@ -3,7 +3,7 @@ version: "2.4"
 services:
   dokuwiki:
     # image: lscr.io/linuxserver/dokuwiki:version-2023-04-04a
-    build: https://github.com/HACManchester/docker-dokuwiki
+    build: https://github.com/HACManchester/docker-dokuwiki.git
     container_name: dokuwiki-hacman
     environment:
       - PUID=1000
