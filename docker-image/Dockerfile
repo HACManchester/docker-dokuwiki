@@ -8,12 +8,11 @@ FROM ghcr.io/linuxserver/dokuwiki:version-2023-04-04a
 # copy files into docker image at build time
 COPY dokuwiki-custom /dokuwiki-custom
 
+RUN \
+  chmod +x /dokuwiki-custom/start.sh
+
 
 # TODO I think I need to specify an entrypoint which runs a script then calls the base entrypoint
 # maybe check if first run has taken place
-
-# ports and volumes
-# EXPOSE 80 443
-# VOLUME /config
 
 ENTRYPOINT ["/dokuwiki-custom/start.sh"]
