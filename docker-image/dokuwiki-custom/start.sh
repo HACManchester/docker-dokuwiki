@@ -1,9 +1,15 @@
 #!/bin/sh
 
-# run various pieces of initialization code here
-# ...
+# Setup the config volume on the first run
+if [ ! -f /config/dokuwiki/.firstrun ]
+then
+    echo "Hacman-dokuwiki: Setting up /config"
+    echo "" >> /config/dokuwiki/.firstrun
 
-echo "TODO HELLO"
+    # TODO
+    cp /init /config/test-init
+
+fi
 
 # kick off the upstream command:
 exec /init "$@"
